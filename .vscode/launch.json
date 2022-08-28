@@ -1,0 +1,16 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "name": "Open arquivo3.html",
+            "file": "c:\\xampp\\htdocs\\pw-2.22-ter\\aula03\\arquivo3.html"
+        }
+    ]
+}
