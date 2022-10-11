@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="idNome"></label>Nome</label>
+            <input type="text" id="idNome" name="nome" placeholder="Digite seu nome" value="">
+            <br>
+            <label for="idDtNasc">Data de Nascimento</label>
+            <input type="date" name="dtNasc" id="idDtNasc">
+            <br>
+            <label for="idEmail">E-mail</label>
+            <input type="email" name="email" id="idEmail">
+            <br>
+            <label for="idTelc">Telefone</label>
+            <input type="tel" name="telefone" id="idTel">
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados acadêmicos</legend>
+            <label for="idCurso">Curso</label>
+            <select name="curso">
+                <option value="ADS">Analise Desenvolvimento de Sistemas</option>
+                <option value="GTI">Gestão de Tecnologia da Informação</option>
+            </select>
+            <br>
+            <label for="idSem">Semestre</label>
+            <input type="radio" id="id1sem" name="semestre" value="1">
+            <label for="id1Sem">1º Semestre</label>
+            <input type="radio" id="id2sem" name="semestre" value="2">
+            <label for="id2Sem">2º Semestre</label>
+            <input type="radio" id="id3sem" name="semestre" value="3">
+            <label for="id3Sem">3º Semestre</label>
+            <input type="radio" id="id4sem" name="semestre" value="4">
+            <label for="id4Sem">4º Semestre</label>
+            <input type="radio" id="id5sem" name="semestre" value="5">
+            <label for="id5Sem">5º Semestre</label>
+
+        </fieldset>
+        <fieldset>
+            <label for="idTrab">Trabalha?</label>
+            <input type="checkbox" name="trabalha" id="idTrab">
+            <br>
+            <label for="idLoc">Local de Trabalho</label>
+            <input type="text" id="idLoc" name="locTrab">
+            <br>
+            <label for="idExp">Descreva sua experiência</label>
+            <br>
+            <textarea cols="80" rows="5" id="idExp">
+
+            </textarea>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
