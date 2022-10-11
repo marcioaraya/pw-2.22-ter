@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <!-- comentário -->
+    <form method="GET" action="programa.php">
+        <label for="idgen">Gênero</label>
+        <input type="radio" name="genero" id="idM" value="M" >
+        <label for="idM">Masculino</label>
+        <input type="radio" name="genero" id="idF" value="F" checked>
+        <label for="idF">Feminino</label>
+        <br>
+
+        <label >Passatempo</label>
+        <input type="checkbox" name="passatempo1" id="idFut" value="Fut" >
+        <label for="idFut">Futebol</label>
+        <input type="checkbox" name="passatempo2" id="idNat" value="Nat" checked>
+        <label for="idNat">Natação</label>
+        <br>
+        <label for="idCurso">Curso</label>
+        <select name="curso" >
+            <option>Escolha o seu curso</option>
+            <option value="1">Análise e Des. Sistemas</option>
+            <option value="2" >Gestão de Tecnologia da Informação</option>
+            <option value="3" selected>Segurança da Informação</option>
+            <option value="4">Banco de Dados</option>
+        </select>
+        <br>
+        
+        <input type="text" 
+               name="nome1" 
+               placeholder="Digite seu nome"
+               value="Marcio">
+        <br>
+        <input type="text" 
+        name="nome2" 
+        placeholder="Digite seu nome"
+        value=""
+        required
+        >
+ <br>
+        <textarea cols="80" rows="5">
+            Digite sua sugestão
+        </textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">      
+    </form>
+</body>
+</html>
