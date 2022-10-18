@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+</head>
+
+<body>
+
+    <h1>Javascript</h1>
+
+    <p >Nota1:
+        <span id="nota1"></span>
+    </p>
+    <p>Nota2:<span  id="nota2"></span></p>
+    <p>Média:<span id="media"></span></p>
+    <p >Situação:<span id="situacao"></span></p>
+
+    <script>
+        // nome é uma variável
+        let n1 = parseFloat(prompt("nota1?"));
+        let n2 = parseFloat(prompt("nota2?"));
+
+        let media = (n1 + n2) / 2;
+        let situacao = "";
+        if (media>=6) {
+             situacao = 'Aprovado';
+        } else  {
+            if (media >=2 && media < 6 ) {
+                 situacao = "Exame Final";
+            } else {
+                 situacao = 'Reprovado';
+            }
+        }
+        document.getElementById("nota1").innerHTML = n1;
+        document.getElementById("nota2").innerHTML = n2;
+        document.getElementById("media").innerHTML = media;
+        document.getElementById("situacao").innerHTML = situacao;
+    </script>
+
+
+</body>
+
+</html>
