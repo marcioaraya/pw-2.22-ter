@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-
-</head>
-
-<body>
-
-    <h1>Javascript</h1>
-
-    <p >Nota1:
-        <span id="nota1"></span>
-    </p>
-    <p>Nota2:<span  id="nota2"></span></p>
-    <p>Média:<span id="media"></span></p>
-    <p >Situação:<span id="situacao"></span></p>
-
-    <script>
-        // nome é uma variável
         let n1 = parseFloat(prompt("nota1?"));
         let n2 = parseFloat(prompt("nota2?"));
 
@@ -46,9 +23,3 @@
         document.getElementById("media").innerHTML = media;
         document.getElementById("situacao").innerHTML = situacao;
         document.getElementById("situacao").style.color = cor; // muda cor da fonte
-    </script>
-
-
-</body>
-
-</html>

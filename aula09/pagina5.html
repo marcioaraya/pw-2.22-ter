@@ -14,16 +14,24 @@
     <h1>Javascript</h1>
 
     <p >Nota1:
-        <span id="nota1"></span>
+        <input type="text" id="nota1">
     </p>
-    <p>Nota2:<span  id="nota2"></span></p>
+    <p>Nota2:
+        <input type="text" id="nota2">
+    </p>
     <p>Média:<span id="media"></span></p>
     <p >Situação:<span id="situacao"></span></p>
 
+    <button onclick="verificaSituacao()">
+        Verificar
+    </button>
+
     <script>
-        // nome é uma variável
-        let n1 = parseFloat(prompt("nota1?"));
-        let n2 = parseFloat(prompt("nota2?"));
+               
+    function verificaSituacao(){
+
+        let n1 = parseFloat(document.getElementById("nota1").value);
+        let n2 = parseFloat(document.getElementById("nota2").value);
 
         let media = (n1 + n2) / 2;
         let situacao = "";
@@ -41,11 +49,13 @@
                  cor = 'red';
             }
         }
-        document.getElementById("nota1").innerHTML = n1;
-        document.getElementById("nota2").innerHTML = n2;
+
         document.getElementById("media").innerHTML = media;
         document.getElementById("situacao").innerHTML = situacao;
         document.getElementById("situacao").style.color = cor; // muda cor da fonte
+
+    }
+
     </script>
 
 
