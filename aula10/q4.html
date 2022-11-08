@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <h1>Conversor temperatura</h1>
+    <h2>Fahrenheit - Celsius</h2>
+
+    <label for="idFahrenheit">Fahrenheit</label>
+    <input type="text" id="idFahrenheit">
+    <p>Fórmula: ºC = (ºF - 32) / 1.8</p>
+    <p>Celsius:<span id="c"></span></p>
+    <p>Situação:<span id="sit"></span></p>
+    <br>
+    <button onclick="calcula()">Converter Fahrenheit -> Celsius</button>
+
+    <script>
+        let f= 0;
+        let celsius = 0;
+
+        function calcula(){
+            let f = parseFloat(document.getElementById("idFahrenheit").value);
+            let c = (f - 32) / 1.8;
+            document.getElementById("c").innerHTML = c;
+            
+            let situacao = "";
+            let cor = "";
+            if (c>=41){
+                situacao = "hipertermia";
+                cor = "red";
+            } else if (c >= 39.6){
+                situacao = "febre alta";
+                cor = "orange";
+            } else if (c >= 37.6){
+                situacao = "febre";
+                cor = "yellow";
+            } else if (c>=36){
+                situacao = "normal";
+                cor = "green";
+            } else if (c<35){
+                situacao = "hipotermia";
+                cor = "blue";
+            }
+
+            document.getElementById("sit").innerHTML = situacao;
+            document.getElementById("sit").style.color = cor;
+            
+        }
+    </script>
+    
+</body>
+</html>
